@@ -15,11 +15,85 @@
 	display: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 /*Photo*/
-/*.myface {
-	border-radius: 10px;
-	position: relative;
-}*/
+.myface {
+    position: relative;
+    width: 100%;
+}
+
+.about {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*About*/
+
+.about_details {
+	display: flex;
+}
+
+.about_details {
+	display: flex; 
+	justify-content: space-around;
+	background-color: #ADD8E6;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+.fa-camera,
+.fa-laptop,
+.fa-globe {
+	font-size: 100px; 
+	color: #fff; 
+}
+
+
+.title {
+	font-size: 25px; 
+	color: #fff; 
+}
+
+.deets {
+	color: #fff; 
+	text-align: justify;
+}
+
+.intro {
+	display: flex; 
+	margin: 10px; 
+}
+
+.face_container {
+	padding: 20px;
+}
+
+.myface {
+	position: relative; 
+	width: 100%; 
+}
+
+.info {
+	font-size: 17px; 
+	flex-wrap: wrap; 
+	margin: 25px;
+	margin-bottom: 20px; 
+	margin-top: 30px;
+}
+
+.dt {
+	margin: 20px; 
+}
+
+.dt_head {
+	text-align: center; 
+	margin-bottom: 25px; 
+}
+
 
 /*Nav Bar*/
 .fa-bars {
@@ -31,7 +105,7 @@
 }
 
 .fa-bars:hover {
-	color: #00bfff;
+	color: #aaaaaa;
 }
 
 .fa-github:hover {
@@ -43,7 +117,11 @@
 }
 
 .fa-twitter:hover {
-	color: #0084b4;
+	color: #007bb6;
+}
+
+.fa-instagram:hover {
+	color: #007bb6;
 }
 
 /*Name*/
@@ -61,7 +139,7 @@ h1 {
 }
 
 .header_name a:hover {
-	color: #00bfff;
+	color: #aaaaaa;
 }
 
 /*Me Info*/
@@ -71,6 +149,8 @@ h1 {
 	color: #aaaaaa;
 	margin: 0px;
 }
+
+
 
 /*Articles/AboutMe*/
 .menuContainer {
@@ -108,7 +188,7 @@ h1 {
 }
 
 .site_nav a:hover {
-	color: #00bfff;
+	color: #aaaaaa;
 }
 
 
@@ -151,7 +231,7 @@ ul a {
 }
 
 .preview_title:hover {
-	color: #00bfff;
+	color: #aaaaaa;
 }
 
 .preview_excerpt {
@@ -211,66 +291,103 @@ ul a {
 
 
 /*Full Header*/
-    .full_header {
-    	background: #404040;
-		padding: 20px;
-		padding-left: 20px;
-		padding-right: 20px;
-		font-family: 'Open Sans', sans-serif;
-		margin: 0px;
-    }
-
-	.full_header_name a {
-		text-decoration: none;
-		color: white;
-	}
-
-	.full_header_name a:hover {
-		color: #00bfff;
-	}
-
-	.full_header_details {
-		font-size: 13px;
-		font-weight: 300;
-		color: #aaaaaa;
-		margin: 0px;
-	}
-
-    .full_social_nav {
-        top: 15px;
-        left: 50%;
-        font-size: 28px;
-		padding: 0px;
-		margin: 2px;
-		color: #aaaaaa;
-		position: absolute;
-        top: 15px;
-        left: 50%;
-    }
-
-	.full_social_nav a{
-		text-decoration: none;
-		color: white;
-	}
-
-	.full_site_nav {
-    font-size: 14px;
-    right: 15px;
-    top: 30px;
-    position: absolute;
-	}
-
-	.full_site_nav a{
-	color: #fff;
-	text-decoration: none;
-	margin-left: 14px;
-	justify-content: space-between;
-	}
-
-	.full_site_nav a:hover,
-	.full_social_nav a:hover {
-	color: #00bfff;
+.full_header {
+	background: #404040;
+	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
 }
+
+.full_header_name a {
+	text-decoration: none;
+	color: white;
+}
+
+.full_header_name a:hover {
+	color: #aaaaaa;
+}
+
+.full_header_details {
+	font-size: 13px;
+	font-weight: 300;
+	color: #aaaaaa;
+	margin: 0px;
+}
+
+.full_social_nav {
+    top: 15px;
+    left: 50%;
+    font-size: 28px;
+	padding: 0px;
+	margin: 2px;
+	color: #aaaaaa;
+	position: absolute;
+    top: 15px;
+    left: 50%;
+}
+
+.full_social_nav a{
+	text-decoration: none;
+	color: white;
+}
+
+.full_site_nav {
+font-size: 14px;
+right: 15px;
+top: 30px;
+position: absolute;
+}
+
+.full_site_nav a{
+color: #fff;
+text-decoration: none;
+margin-left: 14px;
+justify-content: space-between;
+}
+
+.full_site_nav a:hover,
+.full_social_nav a:hover {
+	color: #aaaaaa;
+}
+
+/*Portfolio*/
+.work {
+	width: 49%;
+	justify-content: space-between;
+}
+
+h4 {
+	color: #aaaaaa;
+	font-size: 14.5px;
+}
+
+.test {
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.testphoto {
+	width: 90%; 
+}
+
+.hearneb, 
+.sumeet {
+	margin-left: 25px;
+	margin-right: 25px;
+	justify-content: space-between;
+	text-align: center;
+	flex: 1;
+}
+
+.writing,
+.author {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+
 
 /*Media Queries*/
 @media (min-width: 570px) {
@@ -282,6 +399,22 @@ ul a {
 	.header,
 	.menuContainer {
 		display: none;
+	}
+
+}
+
+@media (max-width: 570px) {
+
+	.work {
+		width: 100%;
+	}
+
+	.test{
+		display: block;
+	}
+
+	.testphoto {
+		width: 100%;
 	}
 
 }
